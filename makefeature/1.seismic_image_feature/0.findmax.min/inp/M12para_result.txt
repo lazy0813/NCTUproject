@@ -1,0 +1,2 @@
+StaID  EPI(km) AZI(degree) PGV(cm/s) T1(sec) T2(sec)  SD(sec) SK     KT    M_ratio  LFHF    A0       AE      ML  MD     
+TPUB    93.244  231.461    0.462E-03  100.06  128.21   28.15   0.87  -0.14   1.451  0.497  0.833E-04  0.292E-02   3.42   2.36
