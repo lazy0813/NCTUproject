@@ -1,0 +1,2 @@
+grid.exe -I.\inpMeq -O.\oupMeq
+image_matrix -I.\inpMeq -O.\oupMeq    #draw ps
