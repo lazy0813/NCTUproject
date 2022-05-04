@@ -1,0 +1,35 @@
+JAN 24. 2011 created by Vvn Weian Chao, Ph.D student 
+Department of Geosecience, National Taiwan University
+
+WINDOWS Version 1.0
+
+** System requirments 
+** For PGPLOT SUBROUTINE
+** Make sure that your system has C:\pgplot\rgb.txt
+**                                C:\pgplot\grfont.dat
+
+
+*     Convert ASC File to Intel SAC File
+**
+**     ASC File Format:
+**----------------------------------------------------
+**     *Original time      - yyyymmddhhmiss.ss
+**     *Lat.  Lon.  Dep.   - Event location
+**     *Station name
+**     *Lat.  Lon.  Elv.   - Station location
+**     *Comp.              - Z/N/E
+**     *Data point
+**     * T(1)  A(1)        - Time and amplitude data 
+**     * T(2)  A(2)
+**     *   .    . 
+**     *   .    .
+**     * T(np) A(np)
+
+
+**----------------------------------------------------
+** How to use the programs?
+**  Just execute each program without any argument
+**  and a small man-page will be prompted on your screen
+
+<Command Execute>:
+ASC2SAC.exe -Iexample.txt BP f1=5. f2=10.
