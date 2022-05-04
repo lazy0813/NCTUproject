@@ -1,0 +1,2 @@
+cal_para.exe stn.luhu.inf -I.\newdatatest\2018luhu -O.\Oup_newdatatest\2018luhu f1=1. f2=5. ela=24.537 elo=121.030 dep=0. com=H
+cal_para.exe stn.Derji.inf -I.\newdatatest\2020Derji -O.\Oup_newdatatest\2020Derji f1=1. f2=5. ela=24.249 elo=121.152 dep=0. com=H

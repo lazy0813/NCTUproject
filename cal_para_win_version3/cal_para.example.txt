@@ -1,0 +1,28 @@
+cal_para.exe G34.inf -I.\G34 -O.\oup_G34 f1=1. f2=5. ela=22.765 elo=120.734 dep=0. com=H
+# output files in oup_G34
+# A.open .\oup_G34\????henv.ps
+# -check envelope function
+# -see the T1 and T2 times and adjust T1 and T2 by yourself
+#-------------------------------------------------------
+# B.open .\oup_G34\????henv.txt
+# FORMAT of ????henv.txt
+# Time(sec)     Root-Mean-Square((cm/s)^2)      ENVELOPE(cm/s)
+#   t1                rms1                        envelope1
+#   t2                tms2                        envelope2
+#    .                 .                             .
+#    .                 .                             .
+# -you can plot the timeseries data of envelope function  
+#-------------------------------------------------------
+# C.see .\oup_G34\para_result.txt
+# FORMAT of para_results.txt
+# StaID  EPI(km) AZI(degree) PGV(cm/s)  T1(sec) T2(sec)  SD(sec) SK     KT    M_ratio  LFHF    A0       AE   ML     MD    SNR
+# -SD SK KT M_ration LFHF parameters for model training
+# -SNR signal-to-noise ratio
+#-------------------------------------------------------
+# D.open .\oup_G34\????.wa.txt
+# FORMAT of ????.wa.txt
+# Time[sec]     Z-comp     N-comp    E-comp  [mm]
+# -you can plot the Woodanderson Accelerograms
+#-------------------------------------------------------
+# E.see .\oup_G34\para_result_sort.txt
+# -sort the results based on epicenter distance

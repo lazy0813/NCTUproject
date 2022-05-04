@@ -1,0 +1,19 @@
+cal_para.exe G04.inf -I.\GeoScansac\G04 -O.\Oup_GS_without2010\G04 f1=1. f2=5. ela=22.694 elo=120.675 dep=0. com=H
+cal_para.exe G05.inf -I.\GeoScansac\G05 -O.\Oup_GS_without2010\G05 f1=1. f2=5. ela=22.704 elo=120.700 dep=0. com=H
+cal_para.exe G07.inf -I.\GeoScansac\G07 -O.\Oup_GS_without2010\G07 f1=1. f2=5. ela=22.717 elo=120.659 dep=0. com=H
+cal_para.exe G08.inf -I.\GeoScansac\G08 -O.\Oup_GS_without2010\G08 f1=1. f2=5. ela=22.708 elo=120.675 dep=0. com=H
+cal_para.exe G12.inf -I.\GeoScansac\G12 -O.\Oup_GS_without2010\G12 f1=1. f2=5. ela=23.258 elo=120.849 dep=0. com=H
+cal_para.exe G14.inf -I.\GeoScansac\G14 -O.\Oup_GS_without2010\G14 f1=1. f2=5. ela=23.264 elo=120.839 dep=0. com=H
+cal_para.exe G15.inf -I.\GeoScansac\G15 -O.\Oup_GS_without2010\G15 f1=1. f2=5. ela=24.032 elo=121.189 dep=0. com=H
+cal_para.exe G18.inf -I.\GeoScansac\G18 -O.\Oup_GS_without2010\G18 f1=1. f2=5. ela=23.943 elo=120.868 dep=0. com=H
+cal_para.exe G32.inf -I.\GeoScansac\G32 -O.\Oup_GS_without2010\G32 f1=1. f2=5. ela=22.745 elo=120.680 dep=0. com=H
+cal_para.exe G34.inf -I.\GeoScansac\G34 -O.\Oup_GS_without2010\G34 f1=1. f2=5. ela=22.765 elo=120.734 dep=0. com=H
+cal_para.exe G35.inf -I.\GeoScansac\G35 -O.\Oup_GS_without2010\G35 f1=1. f2=5. ela=22.768 elo=120.741 dep=0. com=H
+cal_para.exe G36.inf -I.\GeoScansac\G36 -O.\Oup_GS_without2010\G36 f1=1. f2=5. ela=24.077 elo=120.771 dep=0. com=H
+                                                                                                                                                      
+cal_para.exe G01.inf -I.\GeoScansac\G01 -O.\Oup_GS_without2010\G01 f1=1. f2=5. ela=23.48 elo=121.06 dep=0. com=H
+cal_para.exe G03.inf -I.\GeoScansac\G03 -O.\Oup_GS_without2010\G03 f1=1. f2=5. ela=22.93 elo=120.99 dep=0. com=H
+cal_para.exe G06.inf -I.\GeoScansac\G06 -O.\Oup_GS_without2010\G06 f1=1. f2=5. ela=21.95 elo=121.42 dep=0. com=H
+cal_para.exe G10.inf -I.\GeoScansac\G10 -O.\Oup_GS_without2010\G10 f1=1. f2=5. ela=23.80 elo=121.39 dep=0. com=H 
+cal_para.exe G11.inf -I.\GeoScansac\G11 -O.\Oup_GS_without2010\G11 f1=1. f2=5. ela=23.42 elo=121.21 dep=0. com=H
+                                                                                                                     
