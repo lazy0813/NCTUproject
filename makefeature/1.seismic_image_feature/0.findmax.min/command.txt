@@ -1,0 +1,1 @@
+find.max.min.exe -I.\..\..\..\cal_para_win_version2\Oup_Morakoteq\OupMeqPara_result -O.\oupMeq
