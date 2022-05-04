@@ -1,0 +1,1 @@
+plotgrp.bat .\exgrpvel\oup\grp_W09A_W10A.Z.sac.RAW.dat .\exgrpvel\oup\grp_W09A_W10A.Z.sac.ST.dat -R1/11/-1/1 -R0.5000E+00/0.1500E+01/0.5000E+00/0.3500E+01 -T0.0000E+00/0.1000E+01 0.2148E-01 0.1 .\exgrpvel\oup\tf-p_-12_grp.ps .\exgrpvel\oup\grp_W09A_W10A.Z.sac.disper_contf.dat
