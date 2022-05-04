@@ -1,0 +1,6 @@
+  Parameters          maximum  minimum
+      SD (sec)        135.13    1.32
+      SK (---)          5.05    -.16
+      KT (---)         31.24    -.91
+ M_ratio (---)          3.52  -15.76
+ logLFHF (---)          4.10   -1.25
