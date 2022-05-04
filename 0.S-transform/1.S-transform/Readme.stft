@@ -1,0 +1,83 @@
+JAN 24. 2011 created by Weian VVN Chao, Ph.D student 
+Department of Geosecience, National Taiwan University
+
+WINDOWS Version 1.0
+
+*   Spectrogram using (1)short-time Fourier transform for the time-frequency 
+*   analysis of a time-series with Gaussian window
+*   & (2)S-transform
+
+
+0) System requirments 
+* Make sure that your system has GMT4.0
+* For PGPLOT SUBROUTINE
+* Make sure that your system has C:\pgplot\rgb.txt
+*                                C:\pgplot\grfont.dat
+* For GMT4.0 PLOT
+* Make sure that your system has C:\plotscript\plotscript.bat
+*                                C:\plotscript\plotgrp.bat
+* Set the environment variable 
+* setenv.bat
+> Set Path=%path%;C:\bin
+
+1) Compile main program (stft_st_grp.for)
+* Make sure source code of directory path (eg. D:\src\)
+* include fortran code: stft_st_grp.for BPFILTER.FOR FFT.f90 pgplot.for 
+*         include file: pgplot.inc grpckg1.inc
+*         parameter file: grfont.dat rgb.txt
+*         GMT Batch file: plotscript.bat  
+* fl32: fortran compile command for Visual Fortran 5.0
+* compile.bat 
+> set src=D:\src\
+> fl32 /Ox  %src%stft_st_grp.f %src%pgplot.f %src%FFT.f90 %src%BPFILTER.f
+> del *.obj *rsp
+
+2) Prepare data (sac file) & station information file (sta.inf)
+* IF you want to do long-time series analysis, you need to prepare one-day sac file
+* for each component. 
+* IF you want to do short-term time series analysis, I suggest the record length of sac file less
+* than one hour.
+* Each SAC file with time header (eg. KZDATE= JUL 03 (184), 2010 & KZTIME = 00:00:00.00)
+* Each SAC file with Component header (eg. KCMPNM= HLZ)
+* Each SAC file with Station name header (eg. KSTNM= T01S)
+* IF do not include Component & Station name, your SAC filename should fix XXXX.MMDD.C.SAC (T01S.0123.Z.SAC)
+* The station information file is necessary for converted factor (cm/sec/count).
+ 
+3) How to use the programs?
+* Just execute each program without any argument
+* and a small man-page will be prompted on your screen
+
+* AUTHOR: Weian VVN Chao, JAN. 24. 2011
+* NOTES: Please, send bugs, comments, improvements
+ .... to vvnchao@gmail.com 
+* WEBSITE: http://vvnchao.blogspot.tw
+
+4) Default GMT PLOT COLOR-BAR
+* dB amplitude (10*Log(amp))
+* less than 0.5 Max. Amplidude (Amax): black color
+* 0.5Amax (Blue)  to 0.7Amax (Green)
+* 0.7Amax (Green) to 0.9Amax (Yellow)
+* 0.9Amax (Yellow)to Amax (Red)
+
+* not dB amplitude (amp)
+* less than 0.01 Max. Amplidude (Amax): black color
+* 0.01Amax (Blue)  to 0.1Amax (Green)
+* 0.1Amax (Green) to 0.5Amax (Yellow)
+* 0.5Amax (Yellow)to Amax (Red)
+
+Example for user:
+* For single event with short SAC file
+1-0)S-transform with Auto-GMT plot, 
+1-1)Fix frequency band 0.-25.Hz, 
+1-2)time & freq. sampling interval 0.1 & 0.1,
+1-3)Using dB amplitude (10*Log(amp)) with normalizing
+<Command Execute>:
+stft_st_grp.exe sta.inf -I.\ShortSAC -O.\ShortSAC\oup dtt=0.1 dff=0.1 rtr rm nor st dB Comp=Z FPLOT fd=0. fu=20.
+* For Long SAC file (e.g one-day SAC file 1hr timewindow with 50% overlap) take long time
+1-0)S-transform
+<Command Execute>: 
+stft_st_grp.exe sta.inf -I.\LongSAC -O.\LongSAC\oup dtt=100. dff=0.1 rtr rm st dB Comp=Z Lsac fd=0. fu=20.
+* Extract Dispersion Curve
+<Command Execute>:
+stft_st_grp.exe sta.inf -I.\exgrpvel -O.\exgrpvel\oup rm rtr st nor grp grp1=0.5 grp2=3.5 fu=1.5 fd=0.5 Comp=* FPLOT CHECK
+

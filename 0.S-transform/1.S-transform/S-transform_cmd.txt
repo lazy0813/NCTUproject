@@ -1,0 +1,1 @@
+stft_st_grp.exe sta.inf -I.\sac -O.\oup dtt=0.1 dff=0.1 rtr rm nor st dB Comp=* FPLOT fd=0. fu=20. Nsta

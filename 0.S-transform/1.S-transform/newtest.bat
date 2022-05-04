@@ -1,0 +1,2 @@
+stft_st_grp.exe stn_luhu.inp -I.\newdatatest\20180413131000.00 -O.\oup_newdatatest\2018luhu dtt=0.1 dff=0.1 rtr rm nor st dB Comp=* FPLOT fd=0. fu=10. Nsta
+stft_st_grp.exe stn_Derji.inp -I.\newdatatest\20200612010900.00 -O.\oup_newdatatest\2020Derji dtt=0.1 dff=0.1 rtr rm nor st dB Comp=* FPLOT fd=0. fu=10. Nsta
